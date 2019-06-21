@@ -1,0 +1,104 @@
+@font-face {
+
+    font-family: Ubuntu;
+    src: url(../src/Ubuntu-Regular.ttf);
+}
+
+@media only screen and (max-width: 385px) {
+
+    h1 {
+
+        font-size: 1.5rem;
+    }
+    .branch-items > ul > li > a {
+
+        font-size: 0.8em;
+    }
+
+    footer > ul > li > a {
+
+        font-size: 0.8em;
+    }
+}
+
+body {
+
+    margin-top: 6%;
+    font-family: Ubuntu, serif;
+    background-color: #f3f3f3;
+    color: #333742;
+}
+
+.branch-items {
+
+    margin-top: 40px;
+}
+
+.branch-items > ul > li {
+
+    font-size: 22pt;
+    border-bottom: 1px dotted #333742;
+}
+
+footer > ul > li {
+
+    font-size: 15pt;
+    border-bottom: 1px dotted #333742;
+}
+
+a {
+    color: #333742;
+}
+
+a:hover {
+
+    color: #598fe5;
+    text-decoration: none;
+}
+
+.nickname {
+
+    font-family: inherit;
+    font-size: 2em;
+    padding-top: 10px;
+    content: "";
+}
+.nickname:before {
+
+    content: "@";
+}
+
+.nickname:after {
+
+    content: "ludwikmeister"
+}
+
+/* shapes of grays lol */
+
+.hexagon {
+    background: url(../img/lines.png) #333742;
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 86.60px solid #333742;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 86.60px solid #333742;
+}
