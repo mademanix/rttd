@@ -6,13 +6,7 @@
 
 @media only screen and (max-width: 385px) {
 
-    h1 {
-
-        font-size: 0.5em;
-    }
-
     menu > ul > li > a {
-
         font-size: 0.9em;
     }
 
@@ -35,33 +29,25 @@ body {
     justify-content: center;
 }
 
-h1 {
-
-    font-size: 2em;
-}
-
 ul {
 
     padding: 0;
+    margin-bottom: 5px;
 }
 
-menu {
-
-    text-align: center;
-    padding-left: 0;
-}
-
-menu > ul > li {
+main > ul > li {
 
     border-bottom: 1px dotted #333742;
     display: inline-block;
     text-align: center;
     font-size: 1.7em;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 footer > ul > li {
 
-    font-size: 15pt;
+    font-size: 1.5em;
     border-bottom: 1px dotted #333742;
     display: inline-block;
     text-align: center;
