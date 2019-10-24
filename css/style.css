@@ -10,9 +10,10 @@
 
         font-size: 0.5em;
     }
-    .branch-items > ul > li > a {
 
-        font-size: 0.8em;
+    menu > ul > li > a {
+
+        font-size: 0.9em;
     }
 
     footer > ul > li > a {
@@ -52,10 +53,10 @@ menu {
 
 menu > ul > li {
 
-    font-size: 15pt;
     border-bottom: 1px dotted #333742;
     display: inline-block;
     text-align: center;
+    font-size: 1.7em;
 }
 
 footer > ul > li {
