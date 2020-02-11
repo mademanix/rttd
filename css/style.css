@@ -4,106 +4,127 @@
     src: url(../src/Ubuntu-Regular.ttf);
 }
 
-@media only screen and (max-width: 385px) {
+@font-face {
 
-    menu > ul > li > a {
-        font-size: 0.9em;
+    font-family: Icons;
+    src: url(../src/icons.woff2);
+}
+
+@media only screen and (min-width: 500px) {
+
+    header {
+
+        display: inline-flex;
+    }
+    
+    header > .links {
+    
+        display: inline-flex;
+        padding-bottom: 0px;
+        padding-top: 5px;
     }
 
-    footer > ul > li > a {
+    .github, .blog {
 
-        font-size: 0.8em;
+        margin-left: 15px;
     }
+}
+
+html, body {
+
+    height: 100%;
 }
 
 body {
 
-    margin-top: 6%;
-    font-family: Ubuntu, serif;
-    background-color: #f3f3f3;
-    color: #333742;
-    display: -ms-flexbox;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-family: Ubuntu, serif;
+    background: url(../img/hello.jpg) no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #e0e0e0;
 }
 
-ul {
+header {
 
-    padding: 0;
-    margin-bottom: 5px;
+    flex: 1 0 auto;
+    padding: 15px 0 0 15px;
+    font-size: 2rem;
 }
 
-main > ul > li {
+header > div {
 
-    border-bottom: 1px dotted #333742;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.7em;
-    padding-left: 0;
-    margin-bottom: 0;
+    padding: 0 0 10px 0;
+    display: block;
+
 }
 
-footer > ul > li {
+header > .links > div {
 
-    font-size: 1.5em;
-    border-bottom: 1px dotted #333742;
-    display: inline-block;
-    text-align: center;
+    display: block;
+    padding: 0 0 5px 0;
+    font-size: 1.6rem;
+
 }
 
-a {
-    color: #333742;
+.nickname > a {
+
+    color: #e0e0e0;
+    font-family: inherit;
     text-decoration: none;
 }
 
-a:hover {
+.nickname > a:hover {
 
     color: #598fe5;
+}
+
+.github > a {
+
+    color: #e0e0e0;
     text-decoration: none;
+
 }
 
-.nickname {
+.github > a:hover{
 
-    text-align: center;
-    font-family: inherit;
-    font-size: 2em;
-    padding-top: 10px;
-    content: "";
-}
-.nickname:before {
-
-    content: "@ ";
+    color: #666666;
 }
 
+.blog > a {
 
-/* shapes of grays lol */
+    color: #e0e0e0;
+    text-decoration: none;
 
-.hexagon {
-    background: url(../img/lines.png) #333742;
-    position: relative;
-    width: 300px;
-    height: 173.21px;
-    margin: 86.60px 0;
 }
 
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+.blog:hover, .blog > a:hover{
+
+    color: #666666;
+
 }
 
-.hexagon:before {
-    bottom: 100%;
-    border-bottom: 86.60px solid #333742;
+footer {
+
+    font-size: 1.1em;
+    padding: 0 0 15px 15px;
+    flex-shrink: 0;
 }
 
-.hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 86.60px solid #333742;
+footer a {
+
+    color: #e0e0e0;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+
+    color: #666666;
 }
